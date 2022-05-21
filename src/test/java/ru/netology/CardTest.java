@@ -21,7 +21,6 @@ class CardDeliveryOrderTest {
 
     @Test
       void shouldSuccessfullyBookTheDeliveryOfTheCard() {
-        Configuration.holdBrowserOpen=true;     //после выполнения теста браузер останется открытым
         $("[data-test-id=city] input").setValue("Екатеринбург");      //заполнить поле Город
         $("[data-test-id=date] input").setValue("26.05.2022");      //заполнить поле Дата встречи
         $("[data-test-id=name] input").setValue("Иванов-Смирнов Иван");       //заполнить поле Фамилия и имя
